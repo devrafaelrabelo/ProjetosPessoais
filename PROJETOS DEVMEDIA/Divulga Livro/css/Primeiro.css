@@ -1,0 +1,44 @@
+body {
+    padding: 50px;
+    background-color: #f5f5f5;
+}
+
+div {   
+    text-align: center;    
+}
+
+a {
+    font-size: 14px;
+    text-decoration: none;
+    background-color: green;
+    color: #ffffff;
+    padding: 5px 20px;
+    border-radius: 15px;
+    font-family: Tahoma;
+}
+
+img {
+    width: 190;
+    height: 290px;   
+}
+
+h1 {
+    font-family: Tahoma;
+}
+
+h2 {
+    font-family: Tahoma;
+    font-size: 24px;
+}
+
+p {    
+    font-family: Tahoma;      
+    text-align: center; 
+    width: 930px;
+    margin: auto; 
+    line-height: 28px;
+}
+
+span {
+    font-weight: bold;
+}
