@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+.secao {
+    width: 100%;    
+    padding: 120px 80px;
+    box-sizing: border-box;
+}
+.secao-banner {    
+    
+}
+
+.icon-logo {
+    max-width: 250px;       
+}
+
+.logo-paragrafo-1 {
+    font-size: 32px;
+    margin: 0 0 5px 0; 
+    display: flex;
+}
+
+.logo-paragrafo-1 img {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.logo-paragrafo-2 {
+    font-size: 14px;
+    text-align: center;
+    margin: 0;
+}
+
+.secao-slogam {    
+    max-width: 1024px;
+    border-radius: 10px;
+    padding: 40px;
+    margin: 70px auto 0;
+    background-color: #ffffffc4;
+    box-shadow: 0 8px 32px 0px #1f26878e;
+}
+
+.secao-slogam .slogam {
+    font-size: 60px;
+    color: #3c184e;
+    text-align: center;
+    font-weight: 800;
+    margin: 0 0 40px 0;
+}
+
+.secao-slogam .icon-whatsapp {
+    width: 200px;
+    padding: 10px 25px;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: #3c184e;
+    font-size: 20px;
+    text-align: center;    
+}
+
+.icon-whatsapp img {
+    width: 20px;;
+}
+
+.icon-whatsapp a{    
+    color: #fff;
+    text-decoration: none;
+}
+
+.secao-servicos {
+
+}
+
+.secao-servicos h3, .secao-marcas h3, .secao-localizacao h3{
+    font-size: 36px;
+    color: #3c184e;
+    text-align: center;
+    margin: 0 0 45px 0;
+}
+
+.lista-servicos {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    color: #3c184e;
+}
+
+.lista-servicos ul {
+    list-style: square;
+}
+
+.lista-servicos ul li {
+    font-size: 20px;
+    margin: 0 0 20px 0;
+}
+
+.lista-servicos span {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.area-img {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.area-img img {
+    border-radius: 5px;
+    box-shadow: 3px 6px 10px 6px #0000005c;
+}
+
+.secao-faixa {
+    padding: 120px 80px;
+    background-color: #3c184e;
+    text-align: center;
+}
+
+.secao-redesocias p {
+    max-width: 800px;
+    margin: 0 auto 50px;
+    font-size: 40px;
+    color: #fff;
+    text-align: center;
+}
+
+.secao-redesocias span {
+    font-weight: 700;
+    font-style: italic;
+}
+
+.secao-redesocias a {
+    text-decoration: none;
+    margin: 0 20px;
+}
+
+
+.secao-redesocias img {
+    width: 50px;
+    height: 50px;
+}
+
+.secao-marcas div {
+    max-width: 800px;
+    margin: 0 auto;    
+}
+
+.secao-marcas img {
+    width: 148px;
+    height: 148px;
+    margin: 0 15px;
+}
+
+.secao-localizacao {
+    text-align: center;
+}
+
+.secao-localizacao p {
+    font-size: 20px;
+    color: #3c184e;
+    margin: 0 0 45px 0;
+}
+
+.secao-localizacao iframe {    
+    width: 800px;
+    height: 450px;      
+}
+
+.secao-rodape {
+    padding: 10px 0;
+}
+
+.secao-rodape p {
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+}

@@ -1,0 +1,501 @@
+/* INICIO GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+:root{
+    --my-color-principal: #f00;
+    --my-color-background: #000000;
+    --my-color-text: #ffffff;
+    --my-color-text-opacity: #ffffff79;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 10px;
+}
+
+body {
+    background-color: var(--my-color-background);
+    height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+.area {
+    max-width: 1300px;
+    margin: 0 auto;    
+}
+
+.flex {
+    display: flex;
+}
+
+/* FIM GLOBAIS */
+/* INICIO STYLE MENU */
+
+header {
+    padding: 40px 4%;  
+    position: fixed;
+    left: 0;
+    right: 0;  
+    z-index: 1;
+}
+
+header > .area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+.logo img, footer .logo-footer img {
+    width: 100px;
+    height: 100px; 
+    box-shadow: 10px 10px 20px 5px var(--my-color-principal), 0px 0px 20px 5px #ffffff;    
+    transition: .2s;
+}
+
+.logo img:hover, footer .logo-footer img:hover {
+    box-shadow: none;
+}
+
+header a, footer a {
+    color: #a0a0a0;
+    text-decoration: none;
+    font-size: 12px;
+    display: inline-block;
+
+    transition: .2s;
+}
+
+header a:hover, footer a:hover {
+    color: var(--my-color-principal);
+    text-shadow: 0px 0px 15px var(--my-color-principal);
+    transform: scale(1.3);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+header .btn-contato button {
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--my-color-principal);
+    border-style: none;
+    border-radius: 30px;
+    cursor: pointer;    
+}
+
+header .btn-contato button:hover {
+    box-shadow: 0px 0px 15px 0px var(--my-color-principal);
+}
+
+/* FIM STYLE MENU */
+
+/* INICIO MAIN */
+section.person, section.specialty, section.about, section.projects, section.contact{
+    margin: 0 6%;
+}
+
+main .area { 
+    max-width: 1280px;    
+}
+
+h1 {
+    visibility: hidden;
+}
+
+h2 {
+    font-size: 40px;
+    color: var(--my-color-text);
+    line-height: 45px;    
+}
+
+h2 span {
+    font-weight: 700;
+    color: var(--my-color-principal);
+}
+
+section.person .flex, section.specialty, section.about, section.projects, section.contact{
+    align-items: center; 
+    height: 100vh;       
+}
+
+section.person .flex .container-text-person {    
+    padding-left: 230px;
+} 
+
+section .container-text-person .tech {
+    margin: 20px 0;
+}
+
+section .container-text-person .tech h3 {
+    font-size: 20px;
+    color: var(--my-color-text);
+}
+
+section .container-text-person .tech img {
+    width: 50px;
+}
+
+section .container-text-person a {
+    display: inline-block;
+    transition: .2s;
+}
+
+section .container-text-person .btn-contato a:hover {
+    color: var(--my-color-principal);
+    text-shadow: 0px 0px 15px var(--my-color-principal);
+    transform: scale(1.2);
+}
+
+section .container-text-person .btn-contato button {
+    margin-top: 20px;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--my-color-principal);
+    border-style: none;
+    border-radius: 30px;
+    cursor: pointer;    
+}
+
+section .container-text-person .btn-contato button:hover {
+    box-shadow: 0px 0px 15px 0px var(--my-color-principal);
+}
+
+section.person .flex .container-img-person {
+    width: 50%;
+    text-align: center;
+} 
+
+section.person .flex .container-img-person img {
+    width: 400px;
+}
+
+.person .container-img-person {
+    position: relative;
+
+    animation: flutuar 3s ease-in-out infinite alternate;
+}
+
+/* MINHAS SPECIALTY */
+
+section.specialty, section.about, section.projects, section.contact{
+    padding-top: 205px;    
+}
+
+h2.titulo {
+    text-align: center;
+    font-size: 40px;
+}
+
+.specialty .specialty-box {
+    color: var(--my-color-text);
+    padding: 40px;   
+    margin-top: 45px;
+    border-radius: 20px;
+
+    transition: .3s;
+}
+
+.specialty .specialty-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px var(--my-color-text-opacity); 
+}
+
+section.specialty .flex {
+    gap: 60px;
+}
+
+.specialty .specialty-box i {
+    font-size: 70px;
+    color: var(--my-color-principal);
+}
+
+.specialty .specialty-box h3 {
+    font-size: 30px;
+}
+
+.specialty .specialty-box p {
+    font-size: 16px;
+    margin: 15px 0;
+}
+
+/* SOBRE MIM */
+
+section.about .flex {
+    margin-top: 80px;
+    gap: 80px;
+}
+
+section.about .about-minha-foto img {
+    width: 400px;
+    height: 500px;
+    
+}
+
+section.about .about-meu-texto p { 
+    margin-top: 16px; 
+    font-size: 20px;
+    text-align: justify;
+    color: var(--my-color-text);    
+}
+
+section.about .about-meu-texto h2 {
+    text-align: left;
+}
+
+.about-meu-texto .redes, footer .redes {
+    display: flex;
+    margin: 30px 0;
+    gap: 30px;
+}
+
+.about-meu-texto .redes div, footer .redes div {
+    
+   transition: .3s;
+}
+
+.about-meu-texto .redes div:hover, footer .redes div:hover {    
+    transform: scale(1.2);
+}
+
+.about-meu-texto i, footer .redes i {
+    color: var(--my-color-principal);
+    font-size: 70px;     
+}
+
+/* PROJECTS */
+section.projects .flex {
+    margin-top: 80px;
+    justify-content: space-around;
+}
+.project-box {    
+    width: 360px;
+    height: 460px;
+    background-color: #f00;
+    background-size: cover;
+    background-position: 100% 0%;
+    border-radius: 40px;
+
+    transition: 8s;
+    position: relative;
+}
+
+.project-box:hover {
+    background-position: 100% 100%;
+    cursor: pointer;
+}
+
+.overlay {
+    position: absolute;  
+    border-radius: 40px;  
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    
+    background-color: rgba(0, 0, 0, 0.521);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    opacity: 0;
+
+    transition: .3s;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+/* Contact */
+
+form {
+    max-width: 500px;
+    margin: 40px auto 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #494949;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 15px;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+form textarea {
+    resize: none;
+    height: 200px;
+}
+
+form input::placeholder, form textarea::placeholder {
+    color: var(--my-color-principal);
+}
+
+form .btn-enviar {   
+    text-align: center;
+}
+
+form .btn-enviar button {
+    margin-top: 10px;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--my-color-principal);
+    border-style: none;
+    border-radius: 30px;
+    cursor: pointer;  
+    
+    transition: .2s;
+}
+
+form button:hover {
+    box-shadow: 0px 0px 15px 0px var(--my-color-principal);
+    transform: scale(1.2);
+}
+/* FIM  MAIN */
+
+footer .flex {
+    border-bottom: 2px solid var(--my-color-principal);
+    justify-content: space-between;     
+}
+
+footer .area{
+    padding-bottom: 30px
+}
+
+footer .logo-footer img {
+    cursor: pointer;
+}
+
+footer .line-footer p {
+    padding-top: 20px;
+    color: var(--my-color-text);
+    font-size: 24px;
+}
+
+footer .line-footer p i{
+    margin-right: 10px;
+    color: var(--my-color-principal);
+}
+
+/* INICIO  KEYFRAMES */
+
+@keyframes flutuar {
+    0%{
+        top: -100px;      
+    } 
+    100% {
+        top: 100px;        
+    }
+}
+
+/* FIM KEYFRAMES */
+
+/*  -------------------------------------------- */
+
+@media screen and (max-width: 1220px) {
+    /* GLOBAIS */
+    .area {
+        padding: 20px  6%;
+    }
+
+     /* CABEÇALHO */
+    .menu-desktop, header#menu .btn-contato {
+        display: none;
+    }
+    
+    /* PERSON */   
+
+    section.person .flex {
+        margin-top: 200px;
+        height:auto;
+    }
+
+    section.person .flex .container-text-person {  
+        padding-left: 0;           
+    }   
+    
+    section.person .flex .container-img-person {
+       display: none;
+       visibility: hidden;
+    }   
+
+    /* SPECIALTY */
+    section.specialty {
+        height:auto;
+    }
+
+    section.specialty .flex { 
+        
+        flex-direction: column;
+    }
+
+    /* ABOUT */
+    section.about {
+        height:auto;
+    }
+
+    section.about .flex { 
+        height:auto;
+        flex-direction: column;
+    }
+
+    section.about .about-minha-foto img {
+        width: 330px;
+        height: 400px;        
+    }
+
+    /* PROJECTS */
+    section.projects {
+        height:auto;
+    }
+
+    section.projects .flex { 
+        height:auto;
+        flex-direction: column; 
+        align-items: center;
+        gap: 30px;     
+    }
+
+    section.projects .project-box { 
+      width: 330px;    
+    }
+
+    /* CONTACT */
+    
+    /* FOOTER */
+    footer .logo-footer, footer .redes {
+        display: none;
+    }
+
+    footer .line-footer p {
+        padding-top: 20px;
+        color: var(--my-color-text);
+        font-size: 15px;
+    }
+    
+
+}

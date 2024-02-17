@@ -1,56 +1,72 @@
-/* RESET */ 
+/* INICIO RESET */ 
 * {
     margin: 0;
     padding: 0;
-
 }
 
-/* MENU */ 
+/* FIM RESET */ 
 
+/*GLOBAIS INICIO*/ 
 body {
-    background-color: gray;
+    font-family: Tahoma;
+}
+.secao {    
+    
 }
 
-li {    
-    list-style-type: none;    
-    margin: 30px 0px 0px 10px;    
+.limite-display {
+    width: 100%;
+    min-width: none;
+    max-width: 1920px;
+    margin: 0 auto;     
 }
 
-img {     
-    background-color: black;     
+/*GLOBAIS FIM*/
+/*MENU INICIO*/
+.menu-bar {    
+    background-color: rgba(0, 0, 0, 0.700);
+    justify-content: space-between;
+    color: white;
 }
 
-a {
-    font-size: 50px;
-    padding: 5px;
+.menu-bar, .secao-menu ul {
+    display: flex;
+}
+
+.secao-menu ul { 
+    margin: auto 0;
+    padding: 20px 0;
+    list-style: none; 
+           
+}
+
+.secao-menu ul li {    
+    margin: 0 50px; 
+    width: 60px;
+    height: 20px;
+    box-shadow: inset 10px 10px 10px red; 
+}   
+
+.secao-menu ul li a {    
     text-decoration: none;
-    background-color: white;
-    border: 8px solid #000;  
-    border-radius: 15px;
-    border-radius: 15px;
-    font-weight: bold;
-	margin: 10px 20px;
-	font-weight: normal;
-	background-color: #e4e4e4;
-	color: #383838;
-	border-radius: 15px;
-    color: rgb(0, 10,20);
-    line-height: 36px;
-    border-top: 1px dotted red;    
-    text-align: justify;
-    font-weight: bold;    
-    background-color: #795633;
-    color: #ccc1c1;
-    text-decoration: none;
-    font-weight: bold;
+    color: white;    
 }
+
+.menu-bar .btn-contato {
+    margin-right: 20px;
+}
+
+.menu-bar .icon-logo {
+    margin-left: 20px;
+}
+
+/*MENU FIM*/
+
+
+
+ 
+/* CORPO */
+
+
 
 /* RODA PÉ */
-
-blockquote {
-    font-size: 28px;
-    font-weight: bold;
-    font-style: italic;
-    line-height: 48px;
-    padding-left: 10px;
-}
