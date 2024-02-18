@@ -1,0 +1,315 @@
+/* ------------------- INICIO GLOBAL  -------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+} 
+
+:root{
+    --my-color-text: #fff;
+    --my-color-tabelaplanos: #f1f3f7;
+    --my-color-tabelaprecos: #f6f6f6;
+    --my-color-texttabela: #a89f9f;
+    --my-color-dominantedark: #233032;
+    --my-color-dominante: #2f86d6;
+    --my-color-boxshadow: rgba(47, 134, 214, 1);
+}
+
+.limite-flex {
+    max-width: 1280px;
+    margin: 0 auto;   
+}
+
+.text-azul {
+    color: var(--my-color-dominante);
+}
+
+/* ------------------- FIM GLOBAL  -------------------*/
+/* ------------------- INICIO HEADER  -------------------*/
+header .topo {
+    padding: 40px 4%;
+}
+
+header .topo .limite-flex{
+    display: flex;
+    justify-content: space-between;   
+}
+
+/* -------- INICIO CONTAINER LOGO  */
+.container-logo {
+    display: flex;
+    align-items: center;
+}
+
+.container-logo img {
+    width: 85px;
+    height: 85px;    
+}
+
+.container-logo > div {    
+    margin-left: 15px;      
+}
+
+.container-logo > div h1 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 45px;    
+}
+
+.container-logo > div p {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--my-color-dominante);
+}
+
+/* -------- INICIO CONTAINER MENU  */
+.container-menu {
+    display: inline-flex;
+    align-items: center;
+}
+
+.container-menu ul {
+    display: flex;   
+  
+}
+
+.container-menu ul li {
+    list-style: none;
+    padding: 10px;  
+}
+
+.container-menu a {
+    text-decoration: none;
+    color: var(--my-color-dominantedark);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* ------------------- FIM HEADER  -------------------*/
+/* ------------------- INICIO MAIN  -------------------*/
+/* -------- INICIO CONTAINER BANNER  */
+/* INICIO TEXT BANNER  */
+section.banner {
+    padding: 0 4%;
+    display: flex;
+    width: 100%;
+    height: 70vh;
+    align-items: center;
+    background-color: var(--my-color-dominante);
+}
+
+section.banner .limite-flex {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+section.banner .text-banner {
+    width: 600px;
+}
+
+.text-banner p {
+    width: 520px;
+    color: var(--my-color-text);
+    font-size: 20px;
+    font-weight: 500;    
+}
+
+.text-banner > h2 {
+    color: var(--my-color-text);
+    font-size: 40px;
+    font-weight: 800;
+    margin: 20px 0;
+}
+
+/* INICIO IMG BANNER  */
+section.banner .img-banner img {
+    height: 520px;
+    width: 620;
+}
+
+/* -------- FIM CONTAINER BANNER  */
+/* -------- INICIO CONTAINER ANUNCIO - 1  */
+/* INICIO ANUNCIO GLOBAL  */
+section.anuncio {
+    padding: 30px 6%;     
+    width: 100%;
+    height: auto;
+    background-color: var(--my-color-dominantedark);
+}
+
+section.anuncio .limite-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.anuncio .text-anuncio h3{
+    color: var(--my-color-text);
+    font-size: 30px;
+}
+
+section.anuncio .text-anuncio p{
+    color: var(--my-color-text);
+    font-size: 20px;
+}
+
+/* INICIO TEXT ANUNCIO  */
+section.anuncio-1 {
+    background-color: var(--my-color-dominantedark);
+}
+
+/* INICIO BOTÃO ANUNCIO  */
+section.anuncio-1 .btn-link-anuncio button{    
+    padding: 15px 20px;
+    background-color: var(--my-color-dominante);
+    border: 0;
+    border-radius: 5px;
+}
+
+section.anuncio-1 .btn-link-anuncio button a{    
+    font-weight: 900;
+    color: var(--my-color-text);
+    text-decoration: none;
+    font-size: 24px;    
+}
+/* -------- FIM CONTAINER 1-ANUNCIO  */
+/* -------- INICIO CONTAINER INFORMACOES  */
+section.informacoes {
+    padding: 100px 4% 80px;
+}
+
+section.informacoes .limite-flex {    
+    text-align: center;
+}
+/* INICIO TEXTO INFORMACOES  */
+section.informacoes .limite-flex h3 {
+    font-size: 40px;    
+    padding: 0 40px;
+}
+
+/* INICIO PORQUES  */
+section.informacoes .limite-flex .container-porques {
+    display: flex;
+    justify-content: space-around;
+}
+
+.container-porques {
+    padding: 50px 0 0;
+}
+
+.container-porques div{
+   width: 350px;   
+}
+
+.container-porques img{
+    width: 110px;   
+ }
+
+.container-porques h4 {
+    font-weight: 800;
+    font-size: 20px;  
+    padding: 20px 0;  
+}
+
+.container-porques p {    
+    font-size: 16px;
+}
+/* -------- FIM CONTAINER INFORMACOES  */
+/* -------- INICIO CONTAINER PLANOS  */
+section.planos {
+    padding: 0 4%;    
+    width: 100%;
+    height: 100vh;    
+    background-color: var(--my-color-tabelaplanos);
+    text-align: center;
+    
+}
+
+section.planos .limite-flex {    
+    padding-top: 60px;
+    
+}
+
+section.planos .limite-flex h3 {
+    font-size: 35px; 
+}
+
+.tabela-planos  {
+    margin: 50px 0 0;
+    display: flex;
+    justify-content: center;    
+}
+
+.tabela-planos table {     
+    box-shadow: 0 0 30px 20px var(--my-color-dominante);
+}
+
+.tabela-planos th {
+    color: black;
+    font-weight: 800;
+    padding: 20px 0;    
+}
+
+.tabela-planos img {
+    width: 120px;
+}
+
+.tabela-planos th p {
+    text-align: center;
+    color: var(--my-color-texttabela);
+    font-weight: normal;
+    width: 160px;  
+    margin: 0 60px 20px;   
+}
+
+.tabela-planos td {
+    line-height: 80px;
+    font-size: 20px;
+}
+/* -------- FIM CONTAINER PLANOS  */
+/* -------- INICIO CONTAINER 2-ANUNCIO  */
+/* INICIO TEXT ANUNCIO  */
+section.anuncio-2 {
+    background-color: var(--my-color-dominante)
+}
+
+/* INICIO BOTÃO ANUNCIO  */
+section.anuncio-2 .btn-link-anuncio button{    
+    padding: 15px 20px;
+    background-color: var(--my-color-dominantedark);
+    border: 0;
+    border-radius: 5px;
+}
+
+section.anuncio-2 .btn-link-anuncio button a{    
+    font-weight: 900;
+    color: var(--my-color-text);
+    text-decoration: none;
+    font-size: 24px;    
+}
+
+/* -------- FIM CONTAINER 2-ANUNCIO  */
+/* -------- INICIO RODAPE  */
+.rodape .endereco {
+    text-align: center;    
+    font-weight: 600;
+    line-height: 40px;
+}
+
+.rodape .container-logo { 
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+}
+
+.desenvolvedor {
+    background-color: var(--my-color-tabelaplanos);    
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+}
+/* -------- FIM RODAPE  */
