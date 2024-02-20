@@ -1,0 +1,180 @@
+/* ------------------- INICIO GLOBAL  -------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+} 
+
+:root{
+    --my-color-text: #fff;
+    --my-color-tabelaplanos: #f1f3f7;
+    --my-color-tabelaprecos: #f6f6f6;
+    --my-color-texttabela: #a89f9f;
+    --my-color-dominantedark: #233032;
+    --my-color-dominante: #2f86d6;
+    --my-color-boxshadow: rgba(47, 134, 214, 1);
+}
+
+.limite-flex {
+    max-width: 1280px;
+    margin: 0 auto;   
+}
+
+.text-azul {
+    color: var(--my-color-dominante);
+}
+
+/* ------------------- FIM GLOBAL  -------------------*/
+/* ------------------- INICIO HEADER  -------------------*/
+header .topo {
+    padding: 40px 4%;
+    background-color: var(--my-color-dominante);
+}
+
+header .topo .limite-flex{    
+    display: flex;
+    justify-content: space-between;   
+}
+
+/* -------- INICIO CONTAINER LOGO  */
+.container-logo {
+    display: flex;
+    align-items: center;
+}
+
+.container-logo img {
+    width: 85px;
+    height: 85px;    
+}
+
+.container-logo > div {    
+    margin-left: 15px;      
+}
+
+.container-logo > div h1 {
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 45px;    
+}
+
+.container-logo > div p {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--my-color-text);
+}
+
+/* -------- INICIO CONTAINER MENU  */
+.container-menu {
+    display: inline-flex;
+    align-items: center;
+}
+
+.container-menu ul {
+    display: flex;   
+  
+}
+
+.container-menu ul li {
+    list-style: none;
+    padding: 10px;  
+}
+
+.container-menu a {
+    text-decoration: none;
+    color: var(--my-color-text);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* ------------------- FIM HEADER  -------------------*/
+/* ------------------- INICIO MAIN  -------------------*/
+/* -------- INICIO TABELA  */
+section.precos {
+    padding: 40px 4%;
+}
+
+section.precos .limite-flex{ 
+     display: flex;
+     justify-content: center;
+}
+
+/* Seção conteúdo principal */
+.conteudo-principal {
+    padding: 100px 0px;
+  }
+  
+  .conteudo-principal table{
+    margin: auto;
+  }
+  
+  .celula-escondida {
+    visibility: hidden;
+  }
+  
+  .celula-cabeçalho {
+    text-align: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #f1f3f7;
+    border-right: 1px solid #f1f3f7;
+    background-color: #f1f3f7;
+  }
+  
+  .celula-cabeçalho p {
+    font-size: 14px;
+    font-weight: 500;
+    color: #a8a4a4;
+  }
+  
+  .celula-cabeçalho h2 {
+    font-size: 36px;
+  }
+  
+  table tbody td {
+    text-align: center;
+    padding: 20px 40px;
+    border-bottom: 1px solid #f1f3f7;
+    border-right: 1px solid #f1f3f7;
+  }
+  
+  .primeira-celula {
+    background-color: #f1f3f7;
+    font-weight: 500;
+    text-align: left;
+  }
+  
+  .marcador-azul {
+    width: 20px;
+    height: 20px;
+    margin: auto;
+    background-color: #2f86d6;
+    border-radius: 100px;
+  }
+  
+
+/* -------- FIM TABELA  */
+/* ------------------- INICIO FOOTER  -------------------*/
+/* -------- INICIO RODAPE  */
+.rodape .endereco {
+    text-align: center;    
+    font-weight: 600;
+    line-height: 40px;
+    background-color: var(--my-color-dominante);
+}
+
+.rodape .container-logo { 
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+    background-color: var(--my-color-dominante);
+}
+
+.desenvolvedor {     
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+}
+/* -------- FIM RODAPE  */
+/* ------------------- FIM FOOTER  -------------------*/

@@ -34,6 +34,7 @@ header .topo {
 header .topo .limite-flex{
     display: flex;
     justify-content: space-between;   
+    flex-wrap: wrap;
 }
 
 /* -------- INICIO CONTAINER LOGO  */
@@ -94,7 +95,7 @@ section.banner {
     padding: 0 4%;
     display: flex;
     width: 100%;
-    height: 70vh;
+    height: auto;
     align-items: center;
     background-color: var(--my-color-dominante);
 }
@@ -102,6 +103,8 @@ section.banner {
 section.banner .limite-flex {
     display: flex;
     align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 50px;
 }
 
@@ -218,10 +221,9 @@ section.informacoes .limite-flex .container-porques {
 }
 /* -------- FIM CONTAINER INFORMACOES  */
 /* -------- INICIO CONTAINER PLANOS  */
-section.planos {
-    padding: 0 4%;    
-    width: 100%;
-    height: 100vh;    
+section.planos {    
+    padding: 50px 4% 100px;    
+    width: 100%;       
     background-color: var(--my-color-tabelaplanos);
     text-align: center;
     
@@ -236,14 +238,14 @@ section.planos .limite-flex h3 {
     font-size: 35px; 
 }
 
-.tabela-planos  {
-    margin: 50px 0 0;
+.tabela-planos  {   
+    margin-top: 50px; 
     display: flex;
     justify-content: center;    
 }
 
 .tabela-planos table {     
-    box-shadow: 0 0 30px 20px var(--my-color-dominante);
+    box-shadow: 0 0 30px 20px var(--my-color-boxshadow);
 }
 
 .tabela-planos th {
