@@ -8,9 +8,7 @@
   align-items: center;  
   justify-content: space-evenly;      
   flex-wrap: wrap; 
-  flex-flow: row wrap; 
-  flex-grow: 1;
-  flex-direction: column-reverse;
+  gap: 20px; 
 }
 
 .box {
@@ -18,7 +16,9 @@
   height: 300px;
   padding: 30px 20px;
   color: white;
-  font-family: Verdana;  
+  font-family: Verdana;
+  flex: 1 1 300px;
+   
 }
 
 .box h2, p {
