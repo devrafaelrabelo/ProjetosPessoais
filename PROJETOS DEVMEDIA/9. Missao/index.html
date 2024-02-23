@@ -1,163 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- GOOGLE FONTS -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
-        rel="stylesheet" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
-    <!-- GOOGLE FONTS -->
-    <link rel="stylesheet" href="./css/index.css">
-    <title>Pousada Secreta</title>
-    <meta name="description" content="Site Pousada Secreta - 8º Projeto - DEVMEDIA">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Infant&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>LinkBio Neymar</title>
 </head>
 
 <body>
-    <header class="topo">
-        <div class="container-topo">
-            <div class="text-logo">
-                <a href="">Pousada <span class="text-azul">Secreta</span></a>
-            </div>
-            <nav class="menu-bar">
-                <ul>
-                    <li><a href="#sobre">SOBRE</a></li>
-                    <li><a href="#rota">ROTA</a></li>
-                    <li><a href="quartos.html">QUARTOS</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+    <div class="secao-banner">
 
-    <main>
-        <section id="conteudo-principal">
-            <div class="container-banner">
-                <div class="painel-banner">
-                    <h1>Pousada Secreta</h1>
-                    <h2>A pousada reservada em Angra dos Reis</h2>
-                </div>
+        <video autoplay loop muted src="./video/videoneymar.mp4" type="video/mp4">
+        </video>
+
+        <div class="container-info">
+            <div class="imgPerfil-titulo">
+                <div class="imgPerfil"></div>
+                <h1>Neymar Jr</h1>
             </div>
 
-            <div class="container-secao area-limit" id="bemvindo">
-                <div class="container-bemvindo-text">
-                    <h3 class="titulo-pag">SEJA BEM-VINDO(A)!</h3>
-                    <span class="subtitulo-pag">
-                        <p>Relaxe em nossa acomodações e curta o melhor de Angra os Reis.</p>
-                        <p>Temos quartos para solteiro, casal ou família.</p>
-                    </span>
-                </div>
-
-                <div class="box-img-quarto">
-                    <div class="box-img">
-                        <img src="assets/quarto-solteiro1.jpg" alt="Quarto Solteiro">
-                        <h4>QUARTO DE SOLTEIRO</h4>
-                    </div>
-                    <div class="box-img">
-                        <img src="assets/quarto-casal1.jpg" alt="Quarto Casal">
-                        <h4>QUARTO DE CASAL</h4>
-                    </div>
-                    <div class="box-img">
-                        <img src="assets/quarto-familia1.jpg" alt="Quarto Familia">
-                        <h4>QUARTO FAMÍLIA</h4>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="rota" class="rota">
-            <div class="container-rota">
-                <div class="text-rota">
-                    <h3 class="titulo-pag">ROTA</h3>
-                    <p class="subtitulo-pag">Veja como chegar até a pousada.</p>
-                </div>
-                <div class="google-maps">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.117928268743!2d-43.3667660246873!3d-22.98269057920167!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bda2c2293fa63%3A0x539cb07246f0e38d!2sVia%20Parque%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1708455496200!5m2!1spt-BR!2sbr"
-                        width="100%" height="500px" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-        </section>
-
-        <section id="sobre" class="sobre area-limit">
-            <div class="text-sobre">
-                <h3 class="titulo-pag">SOBRE A POUSADA</h3>
-                <p class="subtitulo-pag">Conheça um pouco sobre nossa pousada.</p>
-            </div>
-            <div class="container-box-sobre">
-                <div class="box-sobre">
-                    <div class="box-sobre-desc">
-                        <h5>A Pousada</h5>
-                        <p>A Pousada Dev dispõe de estacionamento
-                            privativo gratuito, piscina ao ar livre e bar</p>
-                    </div>
-                    <div class="box-sobre-img">
-                        <img src="assets/img1.jpg" alt="">
-                    </div>
-                </div>
-
-                <div class="box-sobre">
-                    <div class="box-sobre-desc">
-                        <h5>Nossos Quartos</h5>
-                        <p>Os quartos possuem TV de tela plana a cabo, cozinha compacta e
-                            área para refeições. Além disso, as unidades da Pousada Dev
-                            contam com ar-condicionado e guarda-roupa.</p>
-                    </div>
-                    <div class="box-sobre-img">
-                        <img src="assets/img2.jpg" alt="">
-                    </div>
-                </div>
-
-                <div class="box-sobre">
-                    <div class="box-sobre-desc">
-                        <h5>Alimentação</h5>
-                        <p>A pousada serve café da manhã em estilo continental ou buffet.
-                            Nossos restaurantes funcionam 24hrs</p>
-                    </div>
-                    <div class="box-sobre-img">
-                        <img src="assets/img3.jpg" alt="">
-                    </div>
-                </div>
-
-                <div class="box-sobre">
-                    <div class="box-sobre-desc">
-                        <h5>Recepção</h5>
-                        <p>Nossa recepção fica aberta 24hrs.</p>
-                    </div>
-                    <div class="box-sobre-img">
-                        <img src="assets/img5.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="rodape" id="rodape">
-        <div class="container-rodape area-limit">
-            <div class="container-box-sup">
-                <p>Entre em contato conosco:</p>
-                <div class="box-sup">
-                    <img src="assets/icons/endereco.png" alt="">
-                    <p>Endereço Av. 123, 222 - Rio de Janeiro RJ</p>
-                </div>
-                <div class="box-sup">
-                    <img src="assets/icons/telefone.png" alt="">
-                    <p>Cel: +5521000000000</p>
-                </div>
-                <div class="box-sup">
-                    <img src="assets/icons/calendario.png" alt="">
-                    <p>Faça sua reserva pelo Booking.com</p>
-                </div>
-            </div>
-            <div class="container-box-inf">
-                <p>© Copyright - PousadaDev</p>
+            <div class="arvore-links">
+                <a href="https://www.youtube.com/@NeymarJrReal" target="_blank">
+                    <img src="./assets/youtube.png" alt="">
+                    <p>Siga meu canal no Youtube</p>
+                </a>
+                <a href="https://www.instagram.com/neymarjr/" target="_blank">
+                    <img src="./assets/instagram.png" alt="">
+                    <p>Me siga no Instagram</p>
+                </a>
+                <a href="https://twitter.com/neymarjr" target="_blank">
+                    <img src="./assets/twitter.png" alt="">
+                    <p>Me siga no Twitter</p>
+                </a>
+                <a href="https://www.facebook.com/neymarjr" target="_blank">
+                    <img src="./assets/facebook.png" alt="">
+                    <p>Me siga no Facebook</p>
+                </a>
+                <a href="https://www.twitch.tv/neymarjr" target="_blank">
+                    <img src="./assets/twitch.png" alt="">
+                    <p>Me siga na Twitch</p>
+                </a>
             </div>
         </div>
-    </footer>
+    </div>
+
+    <div class="secao-tabela">
+        <h2>Estatisticas</h2>
+        <div>
+            <table class="tabela">
+                <thead>
+                    <tr>
+                        <th>Times</th>
+                        <th>Temporadas</th>
+                        <th>Jogos</th>
+                        <th>Gols</th>
+                        <th>Assistencia</th>
+                        <th>Títulos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <img src="./assets/cbf.png" alt="">
+                            <p>Brasil</p>
+                        </td>
+                        <td>13</td>
+                        <td>124</td>
+                        <td>77</td>
+                        <td>77</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./assets/santos.png" alt="">
+                            <p>Santos</p>
+                        </td>
+                        <td>5</td>
+                        <td>230</td>
+                        <td>138</td>
+                        <td>77</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./assets/barcelona.png" alt="">
+                            <p>Barcelona</p>
+                        </td>
+                        <td>4</td>
+                        <td>186</td>
+                        <td>105</td>
+                        <td>77</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./assets/psg.png" alt="">
+                            <p>PSG</p>
+                        </td>
+                        <td>6</td>
+                        <td>173</td>
+                        <td>118</td>
+                        <td>77</td>
+                        <td>13</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <img src="./assets/alhilal.png" alt="">
+                            <p>Al-Hilal</p>
+                        </td>
+                        <td>1</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>77</td>
+                        <td>0</td>
+                    </tr>
+                </tbody>
+                <tfoot></tfoot>
+            </table>
+        </div>
+
+    </div>
 </body>
 
 </html>
