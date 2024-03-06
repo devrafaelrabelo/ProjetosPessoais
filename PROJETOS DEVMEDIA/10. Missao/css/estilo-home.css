@@ -1,0 +1,162 @@
+/* INICIO GLOBAIS */
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Source Sans Pro', sans-serif;
+  /* font-family: "Source Sans 3", sans-serif; */
+  box-sizing: border-box;
+
+  color: var(--my-color-textsecundario);
+}
+
+:root {
+  --my-color-textprincipal: #ffffff;
+  --my-color-textsecundario: #0000008c;
+
+  --my-color-header: #00cad1;
+  --my-color-footer: #0d6e71;
+  --my-color-bordarcorpredominante: #009fa5;
+}
+
+#sobre,
+#especialidades,
+#contato
+ {
+  margin: 20px auto;
+  padding: 0 20px 0;
+}
+
+/* SECTION BANNER */
+section.banner {
+  width: 100%;
+  height: 60vh;
+
+  background-image: url(../assets/recepcao.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.banner .titulo-banner {
+  width: 100%;    
+}
+
+section.banner h1 {
+  font-size: 2.2em;
+  font-weight: 500;
+  color: var(--my-color-textprincipal);
+  padding-left: 20px;
+}
+
+/* SECTION SOBRE */
+.container-sobre {
+  max-width: 600px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+  text-align: center;
+}
+
+.container-sobre h2 {
+  font-size: 2em;
+}
+
+.container-sobre .box-lista {
+  width: 100%;
+  display: flex;
+  align-items: center;
+
+  text-align: left;
+  gap: 30px;
+}
+
+.container-sobre .box-lista h3 {
+  padding: 0 0 20px;
+  font-weight: 500;
+}
+
+/* SECTION ESPECIALIDADES */
+.container-especialidades .box-intro{
+  max-width: 600px;
+  margin: 0 auto 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 20px;
+  text-align: center;
+}
+
+.container-medicos {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+
+  gap: 30px;
+  padding: 20px 0;
+}
+
+.container-medicos .box {  
+  flex: 0 0 300px; 
+  box-shadow: 0 0 10px 2px var(--my-color-textsecundario);
+}
+
+.container-medicos .box img {
+  width: 100%;
+}
+
+.container-medicos .box figcaption {
+  text-align: center;
+  padding: 10px 0
+}
+
+.box-link-horarios {
+  display: flex;
+  width: fit-content;
+  margin: 10px auto;
+  padding: 10px 10px;
+  border-radius: 2px;
+  background-color: var(--my-color-header);  
+}
+
+.box-link-horarios a {
+  color: var(--my-color-textprincipal);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* SECTION CONTATO */
+.container-titulo {
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+
+  text-align: center;
+  padding-bottom: 20px ;
+}
+
+@media (max-width: 430px) {
+  section.banner h1 {
+    font-size: 1.6em;    
+  }
+
+  .container-sobre .box-lista img{
+    display: none;
+  }
+}

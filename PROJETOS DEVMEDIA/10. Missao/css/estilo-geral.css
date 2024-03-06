@@ -1,0 +1,123 @@
+/* INICIO GLOBAIS */
+* {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Source Sans Pro', sans-serif;
+    /* font-family: "Source Sans 3", sans-serif; */
+    box-sizing: border-box;
+}
+
+:root {
+    --my-color-textprincipal: #ffffff;
+    --my-color-textsecundario: #0000008c;
+    --my-color-header: #00cad1;
+    --my-color-footer: #0d6e71;
+    --my-color-bordarcorpredominante: #009fa5;
+}
+
+main {
+    color: var(--my-color-background);
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;    
+}
+
+.logo-main {
+    height: 60px;
+}
+
+/* FIM GLOBAIS */
+
+/* INICIO HEADER */
+#top {
+    width: 100%;
+    height: auto;
+    background-color: var(--my-color-header);
+}
+
+#top .container {    
+    display: flex;    
+    justify-content: space-between;
+
+    padding: 0 10px;
+
+    align-items: center;    
+}
+
+#top .container-titulo {
+    width: 120px;
+}
+
+#top nav {
+    width: 70%;  
+    display: flex;   
+    justify-content: flex-end; 
+}
+
+#top nav ul {    
+    display: flex;
+    justify-content: space-between;
+}
+
+#top nav ul li {
+    list-style: none;
+    padding: 10px;
+}
+
+#top nav ul li a {
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1em;
+    color: var(--my-color-textprincipal);    
+}
+
+#top nav ul li a:hover {
+    color: #004b4c;
+}
+
+@media (max-width: 425px) {
+    #top .container {
+        flex-direction: column;        
+    }
+
+    #top .container-titulo {
+        width: 120px;
+        margin: 10px 0;
+    }
+
+    #top nav {
+        width: 100%; 
+    }
+
+    #top nav ul {
+        width: 100%;       
+        
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #009fa5;
+    }
+}
+
+/* FIM HEADER */
+/* INICIO FOOTER */
+
+#rodape {
+    width: 100%;
+    background-color: var(--my-color-footer);
+    color: var(--my-color-textprincipal);
+}
+
+#rodape .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+
+    padding: 30px 0;
+}
+
+/* FIM FOOTER */

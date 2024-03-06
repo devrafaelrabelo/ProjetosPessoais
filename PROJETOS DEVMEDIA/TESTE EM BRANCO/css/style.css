@@ -1,107 +1,81 @@
-/* RESET */
-* { margin: 0; padding: 0; }
-
-/* INICIO REGRAS CSS COMUNS À TODOS OS DISPOSITIVOS */
-.titulo {
-  margin: 20px 0 80px;
-  text-align: center;
+*
+{
+    margin: 0;
+    padding: 0;
 }
 
-.conteudo-dispositivo {
-  display: none;
-  text-align: center;
-}
-/* FIM REGRAS CSS COMUNS À TODOS OS DISPOSITIVOS */
-
-/* INICIO REGRAS CSS REFERENTES À PRIMEIRA VERSÃO */
-@media only screen and (max-width: 480px) {
-
-  body {
-      background-color: #D46A6A;
-      color: #FFF;
-  }
-
-  .conteudo-dispositivo.pequeno {
-      display: block;
-  }
-
-}
-/* INICIO REGRAS CSS REFERENTES À SEGUNDA VERSÃO */
-@media only screen and (min-width: 481px) and (max-width: 1024px) {
-
-  body {
-      background-color: #758AA8;
-      color: #FFF;
-  }
-
-  .conteudo-dispositivo.medio {
-      display: block;
-  }
-
-}
-/* INICIO REGRAS CSS REFERENTES À TERCEIRA VERSÃO */
-@media only screen and (min-width: 1025px) {
-
-  body {
-      background-color: #D4CE6A;
-      color: #000;
-  }
-
-  .conteudo-dispositivo.grande {
-      display: block;
-  }
-
-}
-/* INICIO REGRAS CSS REFERENTES À QUARTA VERSÃO */
-@media print {
-
-  .titulo {
-      margin: 0 0 50px;
-      text-align: left;
-  }
-
-  .conteudo-dispositivo {
-      text-align: left;
-  }
-
-  body {
-      background-color: #FFF;
-      color: #000;
-  }
-
-  .conteudo-dispositivo.impressao {
-      display: block;
-  }
-
+header
+{
+    width: 100%;
+    height: 55px;
+    padding: 20px;
+    box-sizing: border-box;
+    background: #0f52a5;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 16px;
 }
 
-@media screen {
-  body {
-      color: blue;
-  }
+footer
+{
+    width: 100%;
+    height: 55px;
+    position: sticky;
+    bottom: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: sans-serif;
+    background: #f8f8f8;
+    color: #0f52a5;
 }
 
-@media print {
-  body {
-      color: red;
-  }
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 430px;
+    margin: 30px auto;
+    height: 100%;
 }
 
-@media screen and (min-width: 640px){
-  body {
-      background-color: blue;
-  }
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-family: sans-serif;
+    padding: 16px 0;
 }
 
-@media (orientation: portrait) and (min-width: 480px){
-  body {
-      background-color: red;
-
-
-      flex-direction: column;
-  }
+fieldset {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 15px;
+    margin: 10px 0 15px 0;
 }
 
-@media not print and (min-width: 480px) and (orientation: portrait) {
-  /* landscape styles */
+input {
+    height: 32px;
+    margin: 16px 0 16px 0;
+}
+
+button {
+    background: #0f52a5;
+    border: none;
+    height: 32px;
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #fff;
+    margin: 16px 0 0 0;
+}
+
+p {
+    margin: 20px 0 0 0;
+    line-height: 30px;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #0f52a5;
 }
