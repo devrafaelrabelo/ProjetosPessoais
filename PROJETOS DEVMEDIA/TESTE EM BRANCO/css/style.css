@@ -1,4 +1,4 @@
-*
+
 header
 {
     width: 100%;
@@ -9,6 +9,7 @@ header
     color: #ffffff;
     font-family: sans-serif;
     font-size: 16px;
+    columns: ;
 }
 
 footer
@@ -105,3 +106,87 @@ h1 {
     text-transform: uppercase;
     
   }
+
+
+  .topo {  
+    width: 100% ;      
+    padding: 10px 0px  ;
+    display: flex;      
+    align-items: center;      
+    justify-content: space-between;      
+    background-color: rgb(249, 219, 121);      
+    position: fixed;
+
+    font-weight: 600;
+    flex-direction: column;
+    }
+
+    .cadastro-dev-magalu
+ {
+  
+max-width: 500px
+;
+  
+padding: 20px
+;
+  
+background-color: #0086ffde
+;
+  
+color: #fff
+;
+  
+border-radius: 10px
+;
+  margin: 0 auto;
+}
+
+.dados-contato
+ {
+  
+display: flex
+;
+  justify-content: 
+space-between
+;
+  
+border: 1px solid #fff
+;
+  
+margin-bottom: 20px
+;
+  
+border-radius: 5px
+;
+}
+
+.campo-formulario
+ {
+  
+display: flex
+;
+  
+flex-direction: column
+;
+}
+.btn-cadastro-dev
+ {
+  
+width: 150px
+;
+  
+padding: 5px 0px
+;
+  
+border: none
+;
+  
+background-color: #fff
+;
+  
+color: #0086ffde
+;
+  
+border-radius: 5px
+;
+}
